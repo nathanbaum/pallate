@@ -1,0 +1,17 @@
+body {
+  background-color: #efefef;
+  color: #1c1c1c;
+}
+
+ol {
+  text-align: left;
+  font-weight: bolder;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+ol li {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

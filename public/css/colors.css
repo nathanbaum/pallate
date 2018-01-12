@@ -1,0 +1,78 @@
+input {
+  margin-top: 30px;
+  text-align: center;
+  width: 250px;
+}
+
+.colorIn {
+  font-size: 200%;
+  padding: 30px;
+  width: 150px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+input[type=radio] { /*adapted from samkeddy https://codepen.io/samkeddy/pen/PbROLK*/
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+  color: #292929;
+  background-color: #efefef;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 3px solid #292929;
+  border-bottom: 3px solid #292929;
+  border-left: 3px solid #292929;
+}
+
+label[for=complementary] {
+  border-radius: 5px 0px 0px 5px;
+}
+
+label[for=monochromatic] {
+  border-right: 3px solid #292929;
+  border-radius: 0px 5px 5px 0px;
+}
+
+input[type=radio]:checked + label{
+  color: #efefef;
+  background-color: #292929;
+}
+
+input[type=submit] { /*adapted from w3 schools https://www.w3schools.com/css/css3_gradients.asp*/
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left,red,orange,green,blue,indigo);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,green,blue,indigo);
+  /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,green,blue,indigo);
+  /* Standard syntax */
+  background: linear-gradient(to right, red,orange,green,blue,indigo);
+
+  padding: 20px;
+  color: #efefef;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#colorCards li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+  padding: 20px;
+  transition: .3s;
+}
+
+#colorCards li:hover {
+  margin-top: 30px;
+  padding-top: 30px;
+}

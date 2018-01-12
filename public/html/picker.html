@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pallite</title>
+		<link href="../css/base.css" type="text/css" rel="stylesheet">
+		<link href="../css/colors.css" type="text/css" rel="stylesheet">
+		<script src="../js/colorlib.js"></script>
+		<script src="../js/pickerscript.js"></script>
+  </head>
+
+  <ul id="menu">
+    <li style="font-size: 150%; padding-top: -10px; font-weight: bolder;"><span style="color: #ff2828; font-size: 150%;">P</span><span style="color: #31ad2b; font-size: 150%;">A</span><span style="color: #2828ff; font-size: 150%;">L</span>lite</li>
+    <li><a href="picker.html" id="current">Pallate Picker</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+	<body style="background-color: #efefef">
+	  <form id="picker" onsubmit="handleForm(this)">
+	    <input class="colorIn" style="background-color: #ff2828; color: white" type="number" max="255" min="0" name="red" placeholder="RED" required>
+	    <input class="colorIn" style="background-color: #31ad2b; color: white" type="number" max="255" min="0" name="green" placeholder="GREEN" required>
+	    <input class="colorIn" style="background-color: #2828ff; color: white" type="number" max="255" min="0" name="blue" placeholder="BLUE" required>
+	    <br><input type="number" max="10" min="2" name="shades" placeholder="HOW MANY SHADES?"required>
+	    <br><input type="radio" id="complementary" name="complementary" value="true" required>
+	    <label for="complementary">Complementary Pallate</label><input type="radio" id="monochromatic" name="complementary" value="false" required><label for="monochromatic">Monochromatic Pallate</label>
+	    <br><input type="submit"  value="BRING ON THE COLORS!">
+	  </form>
+	  <ul id="colorCards">
+	  </ul>
+	</body>
+	</html>
